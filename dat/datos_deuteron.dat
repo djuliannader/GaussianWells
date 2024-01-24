@@ -1,0 +1,43 @@
+Constant for MeV, angular momentum and Lambda 
+82.895D0  0   6.0
+Number of regions in rho (nrho)  nrho+1 limits  (NUM / DEN)
+3 3
+Limits for rho NUM   (according to Number of Regions)
+0.0 0.5 5.0 1000.0 200000.0 
+Limits for rho DEN 
+0.0 0.5 5.0 1000.0 200000.0 
+Number of regions in z  (nz)  nz+1 limits  (NUM / DEN)
+1 1
+Limits for z  (NUM)  (according to Number of Regions)
+0.0D0 1      
+Limits for z  (DEN) 
+0.0D0 1     
+Default Acc. NUM/DEN,  Factor , Flag for corr., acc. for corr, screen=1/file=0
+1.D-7    1.D-7        1.0D0         1           1.0D-02            1
+
+SET TITLe
+'Variational Energy for Deuteron: Ground State'
+PARAMETERS
+1  ' a1      ='0.8974                  0.001    0.0   1.6
+2  ' h       ='1.0000                  0.0      0.24  0.49      
+3  ' c1      ='0.0352                  0.001    0.0   0.2     
+4  ' d1      ='0.5645                  0.001    0.0   1.0
+5  ' h2      ='0.0000                  0.00     0.0   120.0
+6  ' a2      ='5.4551                  0.00     0.0  40.0      
+7  ' c2      ='1.1227                  0.00     0.0  5.0     
+8  ' d2      ='0.1445                  0.000    0.0  2.0
+9  ' h3      ='0.0000                  0.00   -10.0  10.0
+10 ' a3      ='60.0845                 0.00     0.0  100.0      
+11 ' c3      ='0.1164                  0.00     0.0   4.0     
+12 ' d3      ='0.8402                  0.00    -0.5   4.0
+
+
+set strategy 2
+SET EPS 1.0D-16
+minimize 2000 0.00000001
+improve
+minimize 2000 0.00000001
+stop
+
+-284.18347572764878
+
