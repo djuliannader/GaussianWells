@@ -1,0 +1,61 @@
+Parameter lambda
+0.2
+Parameter V0
+4.0
+Parameters of the orbital
+8.92060778803237
+4.53439043203278
+2.74727017995865
+Number of regions in r1
+2 2
+Limits for x NUM   (according to Number of Regions)
+0.0 2.0 10.0
+Limits for x DEN 
+0.0 2.0 10.0 1000.0
+Number of regions in r2  
+2 2
+Limits for y  (NUM)  (according to Number of Regions)
+0.0D0 2.0 10.0      
+Limits for y  (DEN) 
+0.0D0 2.0 10.0 1000.0
+Number of regions in z  
+1 1
+Limits for theta2  (NUM)  (according to Number of Regions)
+0.0D0 3.1415926535897
+Limits for theta2  (DEN) 
+0.0D0 3.1415926535897
+Default Acc. NUM/DEN,     Factor , Flag for corr., acc. for corr, screen=1/file=0
+1.D-5       1.D-5        1.0D0         1         1.0D-02            1
+
+
+
+SET TITLE
+'Variational Energy Trion'
+PARAMETERS
+1  ' A    ='  1.0000000000  0.001        0.3   2.0
+2  ' B    ='  1.0000000000  0.001        0.3   2.0   
+3  ' C    ='  0.0000000000  0.001       -0.2   0.3
+4  ' C12  ='  0.1000000000  0.001       -0.01  0.2
+5  ' D12  ='  0.1000000000  0.001        0.01  0.2
+
+set strategy 2
+SET EPS 1.0D-16
+minimize 2000 0.00000001
+improve
+minimize 2000 0.00000001
+stop
+
+set strategy 2
+minimize 200
+stop
+
+
+
+minimize
+minimize 100
+minimize 1000
+minimize 2000
+minimize 2000
+minimize 2000
+stop
+

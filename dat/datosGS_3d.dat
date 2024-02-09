@@ -1,11 +1,11 @@
 Coupling Constant and angular momentum
-5.0D0 0
+20.0D0 0
 Number of regions in rho (nrho)  nrho+1 limits  (NUM / DEN)
 2 2
 Limits for rho NUM   (according to Number of Regions)
-0.0  2.22 2000.7 1000.0
+0.0  2.22 500.7 1000.0
 Limits for rho DEN 
-0.0  2.22 2000.7 1000.0
+0.0  2.22 500.7 1000.0
 Number of regions in z  (nz)  nz+1 limits  (NUM / DEN)
 1 1
 Limits for z  (NUM)  (according to Number of Regions)
